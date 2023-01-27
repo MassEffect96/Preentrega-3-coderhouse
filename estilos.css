@@ -1,0 +1,294 @@
+@import url(https://fonts.googleapis.com/css?family=Audiowide);
+/* VARIABLES COLOR */
+body {
+  font-family: "Audiowide", sans-serif;
+  background-image: url(img/Fondo\ Marmol\ negro.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body h1 {
+  color: rgb(247, 241, 242);
+  text-shadow: 3px 2px 8px rgb(243, 1, 1);
+}
+body h2 {
+  color: rgb(247, 241, 242);
+  text-shadow: 3px 2px 8px rgb(243, 1, 1);
+}
+body h3 {
+  color: rgb(247, 241, 242);
+  text-shadow: 3px 2px 8px rgb(243, 1, 1);
+}
+body h4 {
+  color: rgb(247, 241, 242);
+  text-shadow: 3px 2px 8px rgb(243, 1, 1);
+}
+body h5 {
+  color: rgb(247, 241, 242);
+  text-shadow: 3px 2px 8px rgb(243, 1, 1);
+}
+body h6 {
+  color: rgb(247, 241, 242);
+  text-shadow: 3px 2px 8px rgb(243, 1, 1);
+}
+body p {
+  margin-top: 1.5rem;
+  color: rgb(247, 241, 242);
+  text-shadow: 3px 2px 8px rgb(243, 1, 1);
+}
+body small {
+  text-shadow: 3px 2px 8px rgb(243, 1, 1);
+}
+body main {
+  margin: 5px;
+}
+
+article {
+  background: rgba(5, 0, 0, 0.493);
+  border-radius: 60px;
+  box-shadow: 0px 0px 100px rgb(0, 0, 0);
+  margin: 100px;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Estilos bootstrap modificados*/
+.bg-dark {
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 0px 0px 100px rgb(243, 1, 1);
+  background: radial-gradient(circle, rgba(255, 0, 0, 0.432) 0%, rgb(0, 0, 0) 100%);
+}
+
+.btn:hover {
+  transition: all 0.3s;
+  transform: scale(1.1);
+}
+
+/* hoover y estilos de navbar */
+ul:hover li a {
+  transform: scale(1.02);
+  opacity: 0.5;
+  filter: blur(1px);
+}
+
+ul li a:hover {
+  transform: scale(1.01);
+  opacity: 1;
+  filter: blur(0px);
+  text-decoration: none;
+  text-shadow: 1px 3px 5px;
+  color: #fff;
+}
+
+ul li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4941176471);
+  border-radius: 8px;
+  transition: 0.5s;
+  transform-origin: right;
+  transform: scaleX(0);
+  z-index: -1;
+}
+
+ul li a:hover:before {
+  transition: transform 0.5s;
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.navbar-dark {
+  --bs-navbar-color: rgb(255, 255, 255);
+  --bs-navbar-hover-color: rgba(240, 240, 240, 0.966);
+  --bs-navbar-disabled-color: rgba(243, 243, 243, 0.925);
+  --bs-navbar-active-color: red;
+  --bs-navbar-brand-color: rgba(255, 0, 0, 0.733);
+  --bs-navbar-brand-hover-color: red;
+  --bs-navbar-toggler-border-color: red;
+  --bs-navbar-toggler-icon-bg: url(data:image/svg + xml,
+  %3csvgxmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" %3e%3cpathstroke="rgba%28255, 255, 255, 0.55%29" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22" /%3e%3c/svg%3e);
+}
+
+.navbar-brand:hover {
+  text-shadow: 2px 2px 4px red;
+}
+
+/* Index */
+#div1 {
+  background-color: rgba(0, 0, 0, 0.623);
+  border-radius: 80px;
+  box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.521);
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.contact-info {
+  background-color: rgba(12, 0, 0, 0.589);
+  box-shadow: 0px 0px 50px rgba(255, 0, 0, 0.356);
+}
+
+/* Estilos de las cards */
+.row {
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+}
+
+.card {
+  box-shadow: 0px 0px 50px rgba(255, 6, 6, 0.438);
+  border-radius: 20px;
+  --bs-card-border-width: 5px;
+  --bs-card-border-color: rgba(78, 0, 0, 0.034);
+  cursor: pointer;
+}
+.card .btn-primary {
+  background-color: rgb(7, 136, 241);
+  border-radius: 2rem;
+  color: rgb(243, 1, 1);
+}
+.card p {
+  text-decoration: underline;
+}
+
+.text-muted {
+  --bs-text-opacity: 1;
+  color: rgba(247, 242, 242, 0.788) !important;
+}
+
+.card-title {
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 4px #fff;
+}
+
+.card:hover {
+  transition: ease 1s;
+  transform: rotateY(1turn);
+  transform-style: preserve-3d;
+}
+
+/* formulario de contacto */
+form {
+  background-color: rgba(0, 0, 0, 0.596);
+  border-radius: 50px;
+  box-shadow: 0px 0px 50px rgba(241, 3, 3, 0.63);
+  /* Estilo del label de los imputs */
+  /* Estilo Boton Submit */
+}
+form input[type=text],
+form select,
+form textarea {
+  background-color: rgba(255, 255, 255, 0.726);
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgba(255, 0, 0, 0.514);
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+form label {
+  color: rgb(243, 1, 1);
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+form input[type=submit] {
+  background-color: rgba(168, 3, 31, 0.8274509804);
+  color: rgb(255, 255, 255);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  float: right;
+}
+
+/* ----------------Estilos footer!!!!!!!!!! --------*/
+footer {
+  background-image: url(img/japon\ footer.jpg);
+  box-shadow: 0px 0px 25px rgb(17, 126, 189);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+footer ul {
+  color: rgb(21, 109, 168);
+  list-style: none;
+  padding: 0;
+}
+
+.wrap-footer {
+  display: grid;
+  grid-template-columns: 30% 15% 15% 20%;
+  -moz-column-gap: 5%;
+       column-gap: 5%;
+  padding: 1rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  background: rgba(0, 0, 0, 0.301);
+}
+
+.text-element-footer {
+  line-height: 2;
+}
+
+.text-element-footer li a {
+  color: rgb(247, 241, 242);
+  text-shadow: 2px 2px 8px rgb(21, 109, 168);
+}
+
+.redes-element-footer ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.redes-element-footer img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 4rem;
+}
+.redes-element-footer li {
+  margin-right: 1rem;
+}
+
+.footer-creds {
+  background: rgba(5, 0, 0, 0.185);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  color: rgb(247, 241, 242);
+  text-shadow: 2px 2px 8px rgb(21, 109, 168);
+  font-size: 0.9rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.legal-creds ul {
+  display: flex;
+}
+.legal-creds ul li {
+  padding-right: 1rem;
+}
+.legal-creds ul li a {
+  color: rgb(247, 241, 242);
+}
+
+@media (max-width: 768px) {
+  .wrap-footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .wrap-footer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 320px) {
+  .footer-creds {
+    flex-flow: column;
+  }
+}/*# sourceMappingURL=estilos.css.map */
